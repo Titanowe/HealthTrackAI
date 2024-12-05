@@ -1,0 +1,62 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Water Intake Input -->
+    <EditText
+        android:id="@+id/waterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Water Intake (cups)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A" />
+
+    <!-- Exercise Input -->
+    <EditText
+        android:id="@+id/exerciseInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Exercise Duration (minutes)"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <!-- Sleep Input -->
+    <EditText
+        android:id="@+id/sleepInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Sleep Duration (hours)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/submitButton"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:text="View Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:text="Clear Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Display Weekly Data -->
+    <TextView
+        android:id="@+id/weeklyDataText"
+        android:text="Weekly Data "
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

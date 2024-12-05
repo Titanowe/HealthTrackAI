@@ -1,0 +1,27 @@
+<!-- res/layout/activity_detailed_view.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Text view to display detailed data -->
+        <TextView
+            android:id="@+id/detailedDataText"
+            android:text="Details"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:text="Back to Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
