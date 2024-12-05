@@ -2,12 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_background">
+    >
 
     <!-- App Logo -->
     <ImageView
         android:id="@+id/logoImageView"
-        android:src="@drawable/app_logo"
         android:layout_centerInParent="true"
         android:layout_width="200dp"
         android:layout_height="200dp"/>
@@ -15,25 +14,28 @@
     <!-- App Name -->
     <TextView
         android:id="@+id/appNameText"
-        android:text="Healthy Habits Tracker"
-        android:textSize="24sp"
-        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/logoImageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="Healthy Habits Tracker"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
     <!-- Your Name and Student Number -->
     <TextView
         android:id="@+id/studentInfoText"
-        android:text="John Doe - 123456"
-        android:textSize="16sp"
-        android:textColor="#000000"
+        android:layout_width="165dp"
+        android:layout_height="66dp"
         android:layout_below="@id/appNameText"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="137dp"
+        android:text="Thabiso Buthelezi ST10458028"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="16sp" />
 
 </RelativeLayout>
