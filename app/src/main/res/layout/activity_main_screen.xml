@@ -1,62 +1,72 @@
-<!-- res/layout/activity_main.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Water Intake Input -->
+    <!-- Existing UI elements -->
     <EditText
         android:id="@+id/waterInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Water Intake (cups)"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:textColorHint="#546E7A" />
+        android:hint="Enter water intake (in cups)"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Exercise Input -->
     <EditText
         android:id="@+id/exerciseInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Exercise Duration (minutes)"
-        android:inputType="number"
-        android:minHeight="48dp" />
+        android:hint="Enter exercise duration (in minutes)"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Sleep Input -->
     <EditText
         android:id="@+id/sleepInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Sleep Duration (hours)"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp" />
+        android:hint="Enter sleep duration (in hours)"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Buttons -->
+    <!-- New Date Picker -->
     <Button
-        android:id="@+id/submitButton"
-        android:text="Submit"
+        android:id="@+id/datePickerBtn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Select Date" />
 
-    <Button
-        android:id="@+id/viewDetailsButton"
-        android:text="View Details"
+    <TextView
+        android:id="@+id/selectedDateText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Selected Date: None"
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/clearButton"
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <!-- Other buttons -->
+    <Button
+        android:id="@+id/viewDetailsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Clear Data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        tools:ignore="VisualLintButtonSize" />
 
-    <!-- Display Weekly Data -->
+    <!-- Weekly Data Text -->
     <TextView
         android:id="@+id/weeklyDataText"
-        android:text="Weekly Data "
-        android:textSize="16sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Weekly Data"
+        android:textSize="18sp" />
+
 </LinearLayout>
